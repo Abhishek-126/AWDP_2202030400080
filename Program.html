@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Academy - Programs</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #e7e2e2;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1508550536558-5e8d33eb9a82?q=80&w=1629&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-toggler {
+        color: #fff;
+      }
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #04090066;">
+      <a class="navbar-brand" href="#">Sport Academy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Index.html" onclick="setActive(this)">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Program.html" onclick="setActive(this)">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tournament.html" onclick="setActive(this)">Tournament</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Membership.html" onclick="setActive(this)">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html" onclick="setActive(this)">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html" onclick="setActive(this)">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="SignIn.html" onclick="setActive(this)">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html" onclick="setActive(this)">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Our Programs</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Football Program</h3>
+        <p>
+          Our football program is designed for players of all skill levels. Join us to improve your skills, teamwork, and experience the joy of playing football.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h3>Cricket Program</h3>
+        <p>
+          Join our cricket program to learn the art of batting, bowling, and fielding. Our experienced coaches will guide you to become a skilled cricketer.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Basketball Program</h3>
+        <p>
+          Join our basketball program to develop your shooting, dribbling, and teamwork skills. Our dedicated coaches will guide you through drills and exercises to take your game to the next level.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h3>Swimming Program</h3>
+        <p>
+          Dive into our swimming program where you'll learn essential swimming techniques and water safety. Our certified instructors provide a supportive environment for swimmers of all ages.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function setActive(link) {
+      document.querySelectorAll('.navbar-nav a').forEach(function(el) {
+        el.classList.remove('active');
+      });
+
+      link.classList.add('active');
+    }
+  </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

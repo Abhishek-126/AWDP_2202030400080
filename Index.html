@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Academy</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #e7e2e2;
+    }
+
+    header {
+        background-image: url('https://images.unsplash.com/photo-1508550536558-5e8d33eb9a82?q=80&w=1629&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-toggler {
+        color: #fff;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #04090066;">
+      <a class="navbar-brand" href="#">Sport Academy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="Index.html" onclick="setActive(this)">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Program.html" onclick="setActive(this)">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tournament.html" onclick="setActive(this)">Tournament</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Membership.html" onclick="setActive(this)">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html" onclick="setActive(this)">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html" onclick="setActive(this)">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="SignIn.html" onclick="setActive(this)">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html" onclick="setActive(this)">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Welcome to Sport Academy!</h2>
+        <p>
+            Elevate your sports experience with our state-of-the-art facilities, cutting-edge equipment, and a team of dedicated coaches committed to your success. Whether you're stepping onto the field for the first time or aiming for professional heights, our diverse programs cater to every skill level and ambition.
+          </p>
+          <p>
+            At Sport Academy, we believe in the transformative power of sports. It's not just about winning; it's about personal growth, teamwork, and the joy of competition. Join us to unlock your full potential, enhance your skills, and forge lasting friendships within our vibrant community.
+          </p>
+          <p>
+            Explore our range of sports disciplines, from soccer to swimming, basketball to martial arts. Our holistic approach ensures a well-rounded development that goes beyond the game. Experience the thrill of victory and the lessons in defeat as you embark on a journey of self-discovery and athletic mastery.
+          </p>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="col-md-6">
+        <div id="sportCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1552318965-6e6be7484ada?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Sports Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1593341646782-e0b495cff86d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Sports Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1547941126-3d5322b218b0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Sports Image 3">
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function setActive(link) {
+
+      document.querySelectorAll('.navbar-nav a').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      link.classList.add('active');
+    }
+  </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
